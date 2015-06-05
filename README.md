@@ -9,12 +9,12 @@
 ```php
 error_reporting(0);
 ```
-*thats why errors appears randomly later!*
+*thats why errors or warnings appears randomly later!*
 ####3. Use @ intentionally to silence errors
 ```php
-$file = @fopen('...');
+$file = @fopen('file.txt');
 ```
- *check if file exist first no ?*  
+ *have you heard*  [file_exist( )](http://php.net/manual/es/function.file-exists.php) *?* 
 ####4. Not use [isset()](http://php.net/manual/en/function.isset.php) or [array_key_exists](http://php.net/manual/en/function.array-key-exists.php)
 ```php
 if ($_POST['email']) {
@@ -22,13 +22,13 @@ if ($_POST['email']) {
 }
 ```
 *sure this will throw an Exception if email key is not found*
-####5. [Comparison Operators](http://php.net/manual/en/language.operators.comparison.php "http://php.net/manual/en/language.operators.comparison.php")
+####5. [Wrong Comparison Operators](http://php.net/manual/en/language.operators.comparison.php "http://php.net/manual/en/language.operators.comparison.php")
 ```php
 if ($a = value) { ? }
 if (1 == true) { 1;}
 if( 1 === true) { 0 }
 ```
--- Is all in the book
+-- Is all in the link
 ####6.  Security: [SQL injection](http://en.wikipedia.org/wiki/SQL_injection "http://en.wikipedia.org/wiki/SQL_injection") or [XSS attacks](http://en.wikipedia.org/wiki/Cross-site_scripting "http://en.wikipedia.org/wiki/Cross-site_scripting") and others
 *you must use statments and properly validate all external data*
 
