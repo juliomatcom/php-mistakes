@@ -1,10 +1,10 @@
 # php-mistakes
-###Biggest PHP code mistakes
+###Biggest PHP developers mistakes
 
 
 
 ####1. http://php.com/ 
-  *no words*
+  *no explanation*
 ####2. Turn OFF all error reporting
 ```php
 error_reporting(0);
