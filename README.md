@@ -13,7 +13,7 @@ error_reporting(0);
 ```php
 $result = @$my_lib->process($data);
 ```
- *any library will validate the external data and return false or an Exception if something fail so we can handle that*  
+ *a sucure library will validate the external data and return false or an Exception if something fail so we can handle that*  
 ```php
 try {
 $result = $my_lib->process($data);
