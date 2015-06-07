@@ -9,11 +9,20 @@
 error_reporting(0);
 ```
 *thats why errors or warnings appears randomly later!*
-####3. Use @ intentionally to silence errors
+####3. Use @ intentionally to silence errors or exceptions
 ```php
-$file = @fopen('file.txt');
+$result = @$my_lib->process($data);
 ```
- *have you heard*  [file_exist( )](http://php.net/manual/es/function.file-exists.php) *?* 
+ *any library will validate the external data and return false or an Exception if something fail so we can handle that*  
+```php
+try {
+$result = $my_lib->process($data);
+} catch (Exception $e) {
+   //handler the error
+}
+``` 
+	 
+ 
 ####4. Not use [isset()](http://php.net/manual/en/function.isset.php) or [array_key_exists](http://php.net/manual/en/function.array-key-exists.php)
 ```php
 if ($_POST['email']) {
@@ -29,7 +38,7 @@ if( 1 === true) { 0 }
 ```
 -- Is all in the link
 ####6.  Security: [SQL injection](http://en.wikipedia.org/wiki/SQL_injection "http://en.wikipedia.org/wiki/SQL_injection") or [XSS attacks](http://en.wikipedia.org/wiki/Cross-site_scripting "http://en.wikipedia.org/wiki/Cross-site_scripting") and others
-*you must use statments and properly validate all external data*
+*you must use statments and properly encode all external data*
 
 ####7. Not read php-fig [(Basic Coding Standard & Coding Style Guide )](http://www.php-fig.org/)
 *nowadays we work for others people too, we share code and contribute with others developers, so this is a must guide*
@@ -39,4 +48,5 @@ if( 1 === true) { 0 }
 #####Miss some others common mistake ? Make Edit and make a [Pull Request](https://github.com/juliomatcom/php-mistakes/compare "Pull request")
 
 .
+
 
