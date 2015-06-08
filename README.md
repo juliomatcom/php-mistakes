@@ -21,7 +21,7 @@ $result = $my_lib->process($data);
    //handler the error
 }
 ``` 
-*Read more about  [Error Control Operators](http://php.net/manual/en/language.operators.errorcontrol.php) *
+*Read more about  [Error Control Operators](http://php.net/manual/en/language.operators.errorcontrol.php)*
 	 
  
 ####4. Not use [isset()](http://php.net/manual/en/function.isset.php) or [array_key_exists](http://php.net/manual/en/function.array-key-exists.php)
@@ -43,12 +43,8 @@ if( 1 === true) { 0 }
 
 ####7. Not read php-fig [(Basic Coding Standard & Coding Style Guide )](http://www.php-fig.org/)
 *nowadays we work for others people too, we share code and contribute with others developers, so this is a must guide*
-####8. Learn [PHP Frameworks](https://github.com/ziadoz/awesome-php#frameworks) like [Symfony](symfony.com/) before learn PHP 	
+####8. Learn [PHP Frameworks](https://github.com/ziadoz/awesome-php#frameworks) like [Symfony](http://symfony.com/) before learn PHP 	
 *If you don't dominate OOP, ORM, interfaces, abstract classes,  annotations and other basics in PHP  you can not expect to  really understand what are you winning with this Framework*
 ###Contribute
 #####Miss some others common mistake ? Make Edit and make a [Pull Request](https://github.com/juliomatcom/php-mistakes/compare "Pull request")
-
-.
-
-
 
