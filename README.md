@@ -13,7 +13,7 @@ error_reporting(0);
 ```php
 $result = @$my_lib->process($data);
 ```
- *a secure library will validate the external data and return false or an Exception if something fail so we can handle that*  
+ *a secure library will validate the external data and return false or an Exception if something fail so we can handle that* properly 
 ```php
 try {
 $result = $my_lib->process($data);
@@ -21,6 +21,7 @@ $result = $my_lib->process($data);
    //handler the error
 }
 ``` 
+*Read more about  [Error Control Operators](http://php.net/manual/en/language.operators.errorcontrol.php) *
 	 
  
 ####4. Not use [isset()](http://php.net/manual/en/function.isset.php) or [array_key_exists](http://php.net/manual/en/function.array-key-exists.php)
@@ -48,5 +49,6 @@ if( 1 === true) { 0 }
 #####Miss some others common mistake ? Make Edit and make a [Pull Request](https://github.com/juliomatcom/php-mistakes/compare "Pull request")
 
 .
+
 
 
