@@ -30,7 +30,7 @@ if ($_POST['email']) {
     $email = $_POST['email'];
 }
 ```
-*sure this will throw an Exception if email key is not found*
+*sure an E_NOTICE-level error message will be issued if email key is not found*
 ####- [Wrong Comparison Operators](http://php.net/manual/en/language.operators.comparison.php "http://php.net/manual/en/language.operators.comparison.php")
 ```php
 if ($a = value) { /* really what you want?*/ }
