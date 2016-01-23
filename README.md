@@ -2,7 +2,7 @@
 ###Biggest PHP developers mistakes
 
 
-####- http://php.com/ 
+####- http://php.net/ 
   *no explanation*
 ####- Turn OFF all error reporting
 ```php
