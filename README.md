@@ -39,7 +39,8 @@ if (1 == true) { /*true*/ }
 //Identical
 if( 1 === true) { /*false*/ }
 ```
--- Is all in the link
+In fact you should always use Identical operator `===` for comparing and save you the pain later.	
+-- More info in the link
 ####-  Security: [SQL injection](http://en.wikipedia.org/wiki/SQL_injection "http://en.wikipedia.org/wiki/SQL_injection") or [XSS attacks](http://en.wikipedia.org/wiki/Cross-site_scripting "http://en.wikipedia.org/wiki/Cross-site_scripting") and others
 *you must use statments and properly encode all external data*
 
